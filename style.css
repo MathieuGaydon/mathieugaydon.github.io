@@ -89,7 +89,7 @@ main {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;  /* Cela place tous les éléments à la base de .card-content */
+    justify-content: flex-end;  
     
   }
   
@@ -113,7 +113,7 @@ main {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   }
   
-  p {
+  .card p {
     inset: auto auto 80px 30px;
     font-size: 1.2rem;
     color: white;
@@ -156,6 +156,7 @@ main {
     .card:hover h2 {
         inset: auto auto 225px 30px;
       }
+
 }
   
 /*About me */
@@ -291,10 +292,25 @@ main {
             font-size: 30%;  
 }
 }
+
 @media screen and (max-width:1025px) {
     .card{
         display: flex;
         flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width:579px) {
+    a {
+        font-size: 0.8rem;
+    }
+    .card h2{
+        font-size: 1.2rem;
+    }
+    .card{
+        width: 15rem;
+        height: 25rem;
+        margin-left: 3.5em;  
     }
     
 }
