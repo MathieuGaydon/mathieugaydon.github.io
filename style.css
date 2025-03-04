@@ -1,9 +1,10 @@
 body {
     background-image: url('images/background-v2.png'); 
     background-attachment: fixed;
-    background-size: cover; 
     background-position: center;  
     background-repeat: no-repeat; 
+    background-size: cover;  
+
 }
 .title{
     color: rgb(255, 246, 0);
