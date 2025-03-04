@@ -1,7 +1,9 @@
 body {
+    background-image: url('images/background.png'); /* Remplacer par votre image */
     background-attachment: fixed;
-    background-size: 100% 135%;
-    background-image: linear-gradient(67.5deg, rgb(68, 65, 139) 0%, rgb(68, 65, 139) 2%,rgb(89, 77, 155) 2%, rgb(89, 77, 155) 18%,rgb(110, 88, 171) 18%, rgb(110, 88, 171) 23%,rgb(131, 100, 187) 23%, rgb(131, 100, 187) 64%,rgb(151, 111, 203) 64%, rgb(151, 111, 203) 93%,rgb(172, 123, 219) 93%, rgb(172, 123, 219) 95%,rgb(193, 134, 235) 95%, rgb(193, 134, 235) 100%),linear-gradient(22.5deg, rgb(68, 65, 139) 0%, rgb(68, 65, 139) 2%,rgb(89, 77, 155) 2%, rgb(89, 77, 155) 18%,rgb(110, 88, 171) 18%, rgb(110, 88, 171) 23%,rgb(131, 100, 187) 23%, rgb(131, 100, 187) 64%,rgb(151, 111, 203) 64%, rgb(151, 111, 203) 93%,rgb(172, 123, 219) 93%, rgb(172, 123, 219) 95%,rgb(193, 134, 235) 95%, rgb(193, 134, 235) 100%),linear-gradient(45deg, rgb(68, 65, 139) 0%, rgb(68, 65, 139) 2%,rgb(89, 77, 155) 2%, rgb(89, 77, 155) 18%,rgb(110, 88, 171) 18%, rgb(110, 88, 171) 23%,rgb(131, 100, 187) 23%, rgb(131, 100, 187) 64%,rgb(151, 111, 203) 64%, rgb(151, 111, 203) 93%,rgb(172, 123, 219) 93%, rgb(172, 123, 219) 95%,rgb(193, 134, 235) 95%, rgb(193, 134, 235) 100%),linear-gradient(90deg, rgb(68, 65, 139) 0%, rgb(68, 65, 139) 2%,rgb(89, 77, 155) 2%, rgb(89, 77, 155) 18%,rgb(110, 88, 171) 18%, rgb(110, 88, 171) 23%,rgb(131, 100, 187) 23%, rgb(131, 100, 187) 64%,rgb(151, 111, 203) 64%, rgb(151, 111, 203) 93%,rgb(172, 123, 219) 93%, rgb(172, 123, 219) 95%,rgb(193, 134, 235) 95%, rgb(193, 134, 235) 100%),linear-gradient(90deg, rgb(25, 139, 21),rgb(240, 31, 57)); background-blend-mode:overlay,overlay,overlay,overlay,normal;;
+    background-size: cover;  /* Utiliser cover pour que l'image couvre tout l'écran */
+    background-position: center;  /* Centrer l'image */
+    background-repeat: no-repeat; /* Empêcher la répétition de l'image */
 }
 .title{
     color: rgb(255, 246, 0);
@@ -23,7 +25,8 @@ body {
     color: white;
     display: flex;
     justify-content: space-around;
-    font-family: "Dangrek", sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
     font-weight: 400;
     font-style: normal;
 }
@@ -310,6 +313,21 @@ main {
     .card{
         width: 15rem;
         height: 25rem;
-        margin-left: 3.5em;  
+        margin-left: 3em;
+        
+    }
+    h1{
+        font-size: 110%;
+    }
+    .title{
+        font-size: 125%;
+    }
+    .texts p{
+        font-size: 75%;
+    }
+}
+@media screen and (max-width:667px) {
+    .marge{
+        font-size: 70%;
     }
 }
