@@ -34,7 +34,7 @@
     font-weight: 400;
     font-style: normal;
     max-width: auto;
-    max-height: 5em;
+    max-height: 5em !important;
 }
 a{
     color: white;
@@ -257,7 +257,7 @@ main {
 }
 
 /*media quaries*/
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 321px)  {
     .marge{
         h1{
             font-size: 110%;
@@ -282,8 +282,10 @@ main {
       }
 }
 @media  screen and (max-width:376px) and (min-width: 321px) {
-    h1{
-        font-size:150%;
+    .marge{
+        h1{
+        font-size:110%;
+        }
     }
     a {
         font-size: 0.8rem;
